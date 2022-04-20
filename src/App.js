@@ -1,4 +1,5 @@
 import React from 'react'
+import styled from 'styled-components'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Header from './components/Header/Header'
 import Home from './components/Views/Home'
@@ -9,11 +10,20 @@ export default function App() {
     <>
       <BrowserRouter>
         <Header/>
-        <Routes>
-          <Route path='/' element={<Home/>}/>
-          <Route path='/view' element={<View/>}/>
-        </Routes>
+        <Container>
+          <Routes>
+            <Route path='/' element={<Home/>}/>
+            <Route path='/view' element={<View/>}/>
+          </Routes>
+        </Container>
       </BrowserRouter>
     </>
   )
 }
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;

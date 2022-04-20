@@ -9,7 +9,7 @@ export default function QouteHeader() {
         <Container>
             <Wrapper>
                 <RiDatabaseLine size={'3rem'}/>
-                <Link to={'/'}><span>qouteLamb</span></Link>
+                <Link to={'/'}><span>Pro-Velley</span></Link>
             </Wrapper>
         </Container>
     </>
